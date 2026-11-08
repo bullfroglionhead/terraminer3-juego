@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
     <title>Terra Miner 3</title>
     <style>html,body{margin:0;height:100%;background:#221C19;overflow:hidden}</style>
-    <script type="module" crossorigin src="./assets/index-BbxolXn9.js"></script>
+    <script>
+      // El reparto de minas a prueba (Ajustes, 8 nov 2026): se sabe antes de cargar nada, porque el valle se construye con él (src/datos/reparto.ts).
+      try { var r = localStorage.getItem('tm3-reparto-minas'); if (r) globalThis.__repartoDeMinas = r } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-RiHbf5Yo.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BPnYCHeq.css">
   </head>
   <body>
-    <div id="juego"></div>
+    <div id="juego"></div>
   </body>
 </html>
